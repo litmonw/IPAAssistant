@@ -1,0 +1,10 @@
+<template name='ipaGroupTemplate'>
+  <view class='ipa-container'>
+    <text class='group-name'>{{ groupName }}</text>
+    <view class='group-items'>
+      <block wx:for='{{groupItems}}' wx:for-item='item'>
+        <text class='group-item' catchtap='onMusicTap' data-audioUrl='{{ item.audioUrl }}'>{{ item.itemName }}</text>
+      </block>
+    </view>
+  </view>
+</template>

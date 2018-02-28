@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/practice/pratice",
+    "pages/practice/practice-initial/practice-initial",
+    "pages/practice/practice-table/practice-table",
+    "pages/practice/practice-topic/practice-topic",
+    "pages/practice/practice-confusion/practice-confusion",
+    "pages/test/test",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00c853"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#00c853",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/practice/pratice",
+        "text": "练习",
+        "iconPath": "images/practice.png",
+        "selectedIconPath": "images/practice-selected.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测验",
+        "iconPath": "images/test.png",
+        "selectedIconPath": "images/test-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-selected.png"
+      }
+    ]
+  }
+}

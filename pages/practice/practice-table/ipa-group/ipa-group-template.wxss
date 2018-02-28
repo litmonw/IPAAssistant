@@ -1,0 +1,33 @@
+.ipa-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-name {
+  display: inline-block;
+  width: 750rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.group-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.group-item {
+  font-size: 60rpx;
+  display: inline-block;
+  width: 187.5rpx;
+  height: 187.5rpx;
+  text-align: center;
+  line-height: 187.5rpx;
+}
+
+.group-item:hover {
+  background-color: #999;
+  border-radius: 10rpx;
+}

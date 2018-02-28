@@ -1,0 +1,9 @@
+<view>
+  <view>
+    <image src=''></image>
+    <text>Johnny Wang</text>
+  </view>
+  <view>错题集</view>
+  <view>意见反馈</view>
+  <view>关于作者</view>
+</view>

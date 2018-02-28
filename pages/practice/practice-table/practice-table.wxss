@@ -1,0 +1,10 @@
+@import 'ipa-group/ipa-group-template.wxss';
+page {
+  background-color: #fafafa;
+}
+
+.top-tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
