@@ -3,8 +3,40 @@ page {
   background-color: #fafafa;
 }
 
+.table-container {
+  padding-bottom: 40rpx;
+}
+
 .top-tip {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 5rpx;
 }
+
+.detail-switch {
+  margin-left: 10rpx;
+}
+
+.to-topic {
+  margin-top: 14rpx;
+  margin-right: 20rpx;
+}
+
+/* swtich样式-start*/
+/*swtich整体大小*/
+ .wx-switch-input{
+  width:82rpx !important;
+  height:40rpx !important;
+} 
+/*白色样式（false的样式）*/
+ .wx-switch-input::before{
+  width:80rpx !important;
+  height: 36rpx !important;
+} 
+/*绿色样式（true的样式）*/
+ .wx-switch-input::after{
+  width: 40rpx !important;
+  height: 36rpx !important;
+} 
+/*swtich样式end */

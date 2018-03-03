@@ -1,6 +1,7 @@
 .ipa-container {
   display: flex;
   flex-direction: column;
+  margin-top: 30rpx;
 }
 
 .group-name {
@@ -14,7 +15,7 @@
 .group-items {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -30,4 +31,10 @@
 .group-item:hover {
   background-color: #999;
   border-radius: 10rpx;
+}
+
+.ipa {
+  display: inline-block;
+  width: 70rpx;
+  font-size: 60rpx;
 }

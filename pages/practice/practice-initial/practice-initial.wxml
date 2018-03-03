@@ -1,2 +1,12 @@
-<!--pages/practice/practice-initial/practice-initial.wxml-->
-<text>pages/practice/practice-initial/practice-initial.wxml</text>
+<view class='initial-container'>
+  <text class='initial-title'>{{ ipaBaseData.title }}</text>
+  <view class='initial-content'>
+    <text class='initial-text'>{{ ipaBaseData.content }}</text>
+    <image class='initial-img' src='../../../images/pinyin.jpg'></image>
+  </view>
+  <view class='handle-button'>
+     <button wx:if='{{ id != 0 }}' catchtap='onPreviousTap' class='previous-button'>上一节</button> 
+    <button wx:if='{{ id != pageLen - 1 }}' catchtap='onNextTap' class='next-button'>下一节</button>
+    <button wx:else catchtap='onOverTap' class='over-button'>完成</button>
+  </view>
+</view>

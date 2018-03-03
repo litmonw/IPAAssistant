@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/practice/pratice",
+    "pages/practice/practice",
     "pages/practice/practice-initial/practice-initial",
     "pages/practice/practice-table/practice-table",
     "pages/practice/practice-topic/practice-topic",
@@ -17,7 +17,7 @@
     "position": "bottom",
     "list": [
       {
-        "pagePath": "pages/practice/pratice",
+        "pagePath": "pages/practice/practice",
         "text": "练习",
         "iconPath": "images/practice.png",
         "selectedIconPath": "images/practice-selected.png"

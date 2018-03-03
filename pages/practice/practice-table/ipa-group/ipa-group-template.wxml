@@ -3,7 +3,7 @@
     <text class='group-name'>{{ groupName }}</text>
     <view class='group-items'>
       <block wx:for='{{groupItems}}' wx:for-item='item'>
-        <text class='group-item' catchtap='onMusicTap' data-audioUrl='{{ item.audioUrl }}'>{{ item.itemName }}</text>
+        <text class='group-item' catchtap='onMusicTap' data-audioUrl='{{ item.audioUrl }}'>[<text class='ipa'>{{ item.itemName }}</text>]</text>
       </block>
     </view>
   </view>

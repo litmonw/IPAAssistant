@@ -1,1 +1,40 @@
-/* pages/practice/practice-initial/practice-initial.wxss */
+.initial-container {
+  margin-top: 40rpx;
+  text-align: center;
+}
+
+.initial-title {
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.initial-content {
+  box-sizing: border-box;
+  width: 622rpx;
+  margin: 80rpx auto 0;
+  padding: 25rpx;
+  border-radius: 10rpx;
+  border: 1px solid #00c853;
+}
+
+.initial-text {
+  text-align: left;
+}
+
+.initial-img {
+  max-width: 400rpx;
+  text-align: center;
+}
+
+.handle-button {
+  width: 686rpx;
+  margin: 40rpx auto 0;
+  display: flex;
+  flex-direction:row;
+}
+
+.handle-button button {
+  flex: 1;
+  color: #fff;
+  background-color: #00c853;
+}

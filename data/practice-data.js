@@ -1,7 +1,7 @@
 var practiceNavData = [
   {
     title: '初识音标',
-    url: 'practice-initial/practice-initial'
+    url: 'practice-initial/practice-initial?id=0'
   },
   {
     title: '音标发音表',

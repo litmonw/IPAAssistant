@@ -1,12 +1,13 @@
 <import src='ipa-group/ipa-group-template.wxml' />
-<view>
+<view class='table-container'>
   <view class='top-tip'>
-    <label>
-      <checkbox />是否展开音标详情
-    </label>
-    <text>音标太难？来专项练习</text>
+    <view>
+      <text class='detail-text'>自动展开音标详情</text>
+      <switch class='detail-switch' type='' checked></switch>
+    </view>
+      <text class='to-topic'>音标太难？来专项练习</text>
   </view>
   <block wx:for='{{ ipa }}' wx:for-item='item'>
-    <template is='ipaGroupTemplate' data='{{ ...item }}'/>
+    <template is='ipaGroupTemplate' data='{{ ...item }}' />
   </block>
 </view>
