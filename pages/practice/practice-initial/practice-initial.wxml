@@ -1,12 +1,17 @@
 <view class='initial-container'>
   <text class='initial-title'>{{ ipaBaseData.title }}</text>
-  <view class='initial-content'>
+  <scroll-view class='initial-content' scroll-y>
     <text class='initial-text'>{{ ipaBaseData.content }}</text>
-    <image class='initial-img' src='../../../images/pinyin.jpg'></image>
-  </view>
-  <view class='handle-button'>
-     <button wx:if='{{ id != 0 }}' catchtap='onPreviousTap' class='previous-button'>上一节</button> 
+    <view class='initial-img'>
+      <image src='../../../images/pinyin.jpg'></image>
+    </view>
+  </scroll-view>
+  <view class='handle-buttons'>
+    <button wx:if='{{ id != 0 }}' catchtap='onPreviousTap' class='previous-button'>上一节</button>
     <button wx:if='{{ id != pageLen - 1 }}' catchtap='onNextTap' class='next-button'>下一节</button>
-    <button wx:else catchtap='onOverTap' class='over-button'>完成</button>
+    <block wx:else>
+      <button catchtap='onRestartTap' class='restart-button'>再来一次</button>
+      <button catchtap='onOverTap' class='over-button'>完成</button>
+    </block>
   </view>
 </view>

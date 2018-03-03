@@ -11,30 +11,34 @@
 .initial-content {
   box-sizing: border-box;
   width: 622rpx;
+  height: 667rpx;
   margin: 80rpx auto 0;
   padding: 25rpx;
+  text-align: left;
   border-radius: 10rpx;
   border: 1px solid #00c853;
 }
 
-.initial-text {
-  text-align: left;
-}
-
 .initial-img {
-  max-width: 400rpx;
-  text-align: center;
+  margin-top: 40rpx;
 }
 
-.handle-button {
+.initial-img image{
+  max-width: 572rpx;
+}
+
+.handle-buttons {
   width: 686rpx;
   margin: 40rpx auto 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction:row;
 }
 
-.handle-button button {
-  flex: 1;
+.handle-buttons button {
+  width: 50%;
+  flex: auto;
+  margin-top: 40rpx;
   color: #fff;
   background-color: #00c853;
 }

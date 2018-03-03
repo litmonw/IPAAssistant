@@ -1,4 +1,8 @@
  text {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;
-} 
+}
+
+Page {
+  margin-bottom: 40rpx;
+}

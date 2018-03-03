@@ -41,6 +41,12 @@ Page({
     })
   },
 
+  onRestartTap: function (event) {
+    wx.redirectTo({
+      url: 'practice-initial?id=0',
+    })
+  },
+
   turnPage: function (stepNum) {
     var toPage = parseInt(this.data.id) + stepNum;
     wx.redirectTo({
