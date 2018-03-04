@@ -1,9 +1,6 @@
+@import '../../nav-list/nav-list-template.wxss';
 page {
   background-color: #fafafa;
-}
-
-.nav {
-  margin-top: 40rpx;
 }
 
 .qoutes {
@@ -18,29 +15,4 @@ page {
 
 .qoutes-author {
   text-align: right;
-}
-
-.nav-item {
-  display: flex;
-  flex: row;
-  align-items: center;
-  font-size: 24rpx;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 686rpx;
-  margin: 20rpx auto;
-  box-shadow: 0 5rpx 20rpx #888;
-  border-radius: 5rpx;
-  color: #333;
-  padding: 20rpx;
-  margin-bottom: 40rpx;
-}
-
-.arrow-right {
-  width: 48rpx;
-  height: 48rpx;
-}
-
-.item-text {
-  vertical-align: middle;
 }

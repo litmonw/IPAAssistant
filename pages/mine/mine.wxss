@@ -1,1 +1,31 @@
-/* pages/mine/mine.wxss */
+@import '../../nav-list/nav-list-template.wxss';
+
+page {
+  background-color: #fafafa;
+}
+
+.user-info {
+  box-sizing: border-box;
+  height: 400rpx;
+  margin: 40rpx 32rpx 0;
+  padding-top: 100rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  box-shadow: 0 5rpx 20rpx #888;
+  text-align: center;
+}
+
+.user-avatar {
+  margin-bottom: 20rpx;
+}
+
+.user-avatar image{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 28rpx;
+  color: #333;
+}

@@ -1,8 +1,9 @@
- text {
+text {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;
 }
 
-Page {
+page {
   margin-bottom: 40rpx;
+  box-sizing: border-box;
 }

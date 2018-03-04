@@ -6,7 +6,10 @@
     "pages/practice/practice-topic/practice-topic",
     "pages/practice/practice-confusion/practice-confusion",
     "pages/test/test",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/mine/wrongcollection/wrongcollection",
+    "pages/mine/feedback/feedback",
+    "pages/mine/about/about"
   ],
   "window": {
     "navigationBarBackgroundColor": "#00c853"

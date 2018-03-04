@@ -1,9 +1,9 @@
+<import src='/nav-list/nav-list-template.wxml' />
 <view>
-  <view>
-    <image src=''></image>
-    <text>Johnny Wang</text>
+  <view class='user-info'>
+    <view class='user-avatar'>
+      <image src='/images/avatar.jpeg '></image></view>
+    <text class='user-name'>Johnny Wang</text>
   </view>
-  <view>错题集</view>
-  <view>意见反馈</view>
-  <view>关于作者</view>
+  <template is='navListTemplate' data='{{ navList }}' />
 </view>

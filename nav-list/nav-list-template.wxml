@@ -1,0 +1,10 @@
+<template name='navListTemplate'>
+  <view class='nav-list'>
+    <block wx:for='{{ navList }}' wx:for-item='item'>
+      <view class='nav-item' catchtap='onNavTap' data-NavUrl='{{ item.url }}'>
+        <text class='item-text'>{{ item.title }}</text>
+        <image class='arrow-right' src='../../images/arrow-right.png'></image>
+      </view>
+    </block>
+  </view>
+</template>
