@@ -1,5 +1,6 @@
 var ipaData = [
   {
+    groupId: 0,
     groupName: '前元音',
     groupItems: [
       {
@@ -21,6 +22,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 1,
     groupName: '中元音',
     groupItems: [
       {
@@ -38,6 +40,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 2,
     groupName: '后元音',
     groupItems: [
       {
@@ -63,6 +66,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 3,
     groupName: '开合双元音',
     groupItems: [
       {
@@ -88,6 +92,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 4,
     groupName: '集中双元音',
     groupItems: [
       {
@@ -105,6 +110,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 5,
     groupName: '清辅音',
     groupItems: [
       {
@@ -154,6 +160,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 6,
     groupName: '浊辅音',
     groupItems: [
       {
@@ -203,6 +210,7 @@ var ipaData = [
     ]
   },
   {
+    groupId: 7,
     groupName: '其他',
     groupItems: [
       {

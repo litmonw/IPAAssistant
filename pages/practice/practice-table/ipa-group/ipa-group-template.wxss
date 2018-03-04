@@ -28,13 +28,31 @@
   line-height: 187.5rpx;
 }
 
-.group-item:hover {
-  background-color: #999;
-  border-radius: 10rpx;
+.group-items .active {
+  background-color: #f2f2f2;
+  border-radius: 10rpx 10rpx 0 0;
 }
 
 .ipa {
   display: inline-block;
   width: 70rpx;
   font-size: 60rpx;
+}
+
+.detail-container {
+  background-color: #f2f2f2;
+  padding: 40rpx 20rpx;
+}
+
+.method-head text {
+  font-size: 32rpx;
+  border-left: 8rpx #00c853 solid;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-indent: 28rpx;
+  display: block;
+}
+
+.method-content {
+  padding-top: 10rpx;
 }

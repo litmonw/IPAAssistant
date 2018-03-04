@@ -3,11 +3,13 @@
   <view class='top-tip'>
     <view>
       <text class='detail-text'>自动展开音标详情</text>
-      <switch class='detail-switch' type='' checked></switch>
+      <switch class='detail-switch' type='switch' checked='{{ isSpreadDetail ? true : false }}' bindchange='switchDetailChange'></switch>
     </view>
       <text class='to-topic'>音标太难？来专项练习</text>
   </view>
   <block wx:for='{{ ipa }}' wx:for-item='item'>
-    <template is='ipaGroupTemplate' data='{{ ...item }}' />
+    <view catchtap='onSpreadTap' data-itemId='{{ item.groupId }}'>
+      <template is='ipaGroupTemplate' data='{{ item,currentItemId,currentIpaDetail,isSpreadDetail }}' />
+    </view>
   </block>
 </view>
