@@ -16,7 +16,7 @@ Page({
   onLoad: function (options) {
     var globalData = app.globalData;
     this.setData({
-      ipa: ipaData.ipaList,
+      ipa: ipaData.items,
       ipaDetail: ipaDetail.items,
       isSpreadDetail: globalData.g_spreadIpaDetail
     })

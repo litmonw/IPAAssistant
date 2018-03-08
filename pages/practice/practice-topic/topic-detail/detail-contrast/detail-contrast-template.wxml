@@ -1,0 +1,20 @@
+<template name='detailContrastTemplate'>
+  <view class='contrast-container'>
+    <text class='tips'>对比示范/我的发音</text>
+    <view class='ipa-contrast'>
+      <view class='pro-voice' catchtap='onMusicTap'>
+        <image class='note' src='/images/note.png'></image>
+        <text>示范发音</text>
+      </view>
+      <view class='self-voice' catchtap='onPlaySelfTap'>
+        <image class='note' src='/images/note.png'></image>
+        <text>我的发音</text>
+      </view>
+    </view>
+    <view class='choose-audio'>
+      <view class='choose-audio-icon' catchtap='onRecordTap'>
+        <image class='microphone' src='{{ isRecording ? "/images/stop.png" : "/images/microphone.png"}}'></image>
+      </view>
+    </view>
+  </view>
+</template>

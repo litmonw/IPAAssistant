@@ -1,2 +1,13 @@
 <!--pages/practice/practice-topic/practice-topic.wxml-->
-<text>pages/practice/practice-topic/practice-topic.wxml</text>
+<view class='container'>
+  <block wx:for='{{ ipa }}' wx:for-item='item'>
+    <view catchtap='onSpreadTap' data-itemId='{{ item.groupId }}'>
+      <text class='group-name'>{{ item.groupName }}</text>
+      <view class='group-items'>
+        <block wx:for='{{ item.groupItems }}' wx:for-item='item'>
+          <text class='group-item' catchtap='onTopicTap' data-name='{{ item.itemName }}'>[<text class='ipa'>{{ item.itemName }}</text>]</text>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,11 @@
+<template name='detailTryTemplate'>
+  <text class='tips'>跟随发音一起来试试</text>
+  <view class='ipa-contrast'>
+    <text>[<text>{{ currentIpa.name }}</text>]</text>
+    <image class='audio-play' catchtap='onMusicTap' src='/images/play.png'></image>
+  </view>
+  <view class='ipa-method'>
+    <text class='method-title'>发音方法</text>
+    <view class='method-detail'>{{ currentIpa.method }}</view>
+  </view>
+</template>

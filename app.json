@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/practice/practice-topic/practice-topic",
     "pages/practice/practice",
     "pages/practice/practice-initial/practice-initial",
     "pages/practice/practice-table/practice-table",
-    "pages/practice/practice-topic/practice-topic",
+    
+    "pages/practice/practice-topic/topic-detail/topic-detail",
     "pages/practice/practice-confusion/practice-confusion",
     "pages/test/test",
     "pages/mine/mine",

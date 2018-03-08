@@ -1,0 +1,44 @@
+/* pages/practice/practice-topic/topic-detail/topic-detail.wxss */
+@import 'detail-try/detail-try-template.wxss';
+@import 'detail-contrast/detail-contrast-template.wxss';
+.ipa-head {
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.ipa-name {
+  font-size: 32rpx;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -24rpx;
+  margin-left: -66rpx;
+}
+
+.progress {
+  font-size: 28rpx;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 40rpx;
+  margin-top: -21rpx;
+}
+
+.handle-buttons {
+  width: 686rpx;
+  margin: 40rpx auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.handle-buttons button {
+  width: 50%;
+  flex: auto;
+  margin-top: 40rpx;
+  color: #fff;
+  background-color: #00c853;
+}

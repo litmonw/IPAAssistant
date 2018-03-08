@@ -29,6 +29,7 @@ App({
   },
 
   globalData: {
-    g_spreadIpaDetail: false
+    g_spreadIpaDetail: false,
+    g_isRecording: false
   }
 })

@@ -1,4 +1,4 @@
-var ipaData = [
+var Data = [
   {
     groupId: 0,
     groupName: '前元音',
@@ -242,5 +242,5 @@ var ipaData = [
 ];
 
 module.exports = {
-  ipaList: ipaData
+  items: Data
 }

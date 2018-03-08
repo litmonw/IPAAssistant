@@ -1,0 +1,51 @@
+.contrast-container .ipa-contrast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: auto;
+  margin-top: 60rpx;
+}
+
+.pro-voice,.self-voice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40rpx;
+  border: solid 4rpx #00c853;
+  border-radius: 10rpx;
+}
+
+.contrast-container .note {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.pro-voice text,.self-voice text {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+
+
+.choose-audio {
+  height: 160rpx;
+  margin-top: 40rpx;
+  position: relative;
+}
+
+.choose-audio-icon {
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -80rpx;
+  border-radius: 50%;
+  background-color: #00c853;
+  text-align: center;
+}
+
+.contrast-container .microphone {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 30rpx;
+}

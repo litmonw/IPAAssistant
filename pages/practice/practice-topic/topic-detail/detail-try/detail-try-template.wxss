@@ -1,0 +1,46 @@
+.tips {
+  display: block;
+  width: 750rpx;
+  height: 40rpx;
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.ipa-contrast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: auto;
+  margin-top: 60rpx;
+}
+
+.ipa-contrast text {
+  font-size: 80rpx;
+}
+
+.audio-play {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.ipa-method {
+  box-sizing: border-box;
+  width: 686rpx;
+  margin: 40rpx auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.method-title {
+  display: block;
+  width: 686rpx;
+  height: 40rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+.method-detail {
+  font-size: 32rpx;
+  margin-top: 40rpx;
+}
