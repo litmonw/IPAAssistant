@@ -3,7 +3,7 @@
     <text class='group-name'>{{ item.groupName }}</text>
     <view class='group-items'>
       <block wx:for='{{ item.groupItems }}' wx:for-item='item'>
-        <text class='group-item {{ currentIpaDetail.itemName == item.itemName ? "active" : "" }}' bindtap='onMusicTap' data-name='{{ item.itemName }}' data-audioUrl='{{ item.audioUrl }}'>[<text class='ipa'>{{ item.itemName }}</text>]</text>
+        <text class='group-item {{ currentIpaDetail.name == item.itemName ? "active" : "" }}' bindtap='onMusicTap' data-name='{{ item.itemName }}' data-audioUrl='{{ item.audioUrl }}'>[<text class='ipa'>{{ item.itemName }}</text>]</text>
       </block>
     </view>
   </view>

@@ -45,7 +45,7 @@ Page({
     var ipaDetailArr = this.data.ipaDetail;
     // 获得当前 ipa 的详情
     for (var i = 0; i < ipaDetailArr.length; i++) {
-      if (currentIpa == ipaDetailArr[i].itemName) {
+      if (currentIpa == ipaDetailArr[i].name) {
         currentIpaDetail = ipaDetailArr[i];
         break;
       }
