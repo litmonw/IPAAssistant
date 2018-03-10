@@ -8,8 +8,21 @@
       <text class='to-topic'>音标太难？来专项练习</text>
   </view>
   <block wx:for='{{ ipa }}' wx:for-item='item'>
-    <view catchtap='onSpreadTap' data-itemId='{{ item.groupId }}'>
-      <template is='ipaGroupTemplate' data='{{ item,currentItemId,currentIpaDetail,isSpreadDetail }}' />
+    <view catchtap='onSpreadTap'>
+      <template is='ipaGroupTemplate' data='{{ item,currentIpaDetail,isSpreadDetail }}' />
     </view>
   </block>
+
+    <view class='detail-container {{ isActiveDetailMenu ? "" : "hide" }}' wx:if='{{ currentIpaDetail != "" && isSpreadDetail }}' catchtap='onShutdownTap'>
+    <view class='close'>
+      <image class='close-img' src='/images/close.png'></image>
+    </view>
+    <view class='method-head'>
+      <text>发音方法</text>
+    </view>
+    <view class='method-content'>
+      <text>{{ currentIpaDetail.method }}</text>
+    </view>
+  </view>
+  
 </view>

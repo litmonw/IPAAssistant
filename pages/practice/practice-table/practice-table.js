@@ -8,6 +8,7 @@ Page({
    */
   data: {
     currentItemId: -1,
+    isActiveDetailMenu: false,
   },
 
   /**
@@ -33,7 +34,6 @@ Page({
 
   // 获得当前点击的 音标所在组 和 音标详情
   onSpreadTap: function (event) {
-    console.log(event,111);
     var globalData = app.globalData;
     var currentIpa = event.target.dataset.name;
     if (currentIpa === undefined) {
@@ -52,8 +52,8 @@ Page({
     }
     // 绑定当前所在组 id 和 当前 ipa 详情
     this.setData({
-      currentItemId: event.currentTarget.dataset.itemid,
-      currentIpaDetail: currentIpaDetail
+      currentIpaDetail: currentIpaDetail,
+      isActiveDetailMenu: true
     })
   },
 
@@ -71,6 +71,13 @@ Page({
         isSpreadDetail: false
       });
     }
+  },
+
+  // 关闭详情菜单
+  onShutdownTap: function (e) {
+    this.setData({
+      isActiveDetailMenu: false
+    });
   }
 
 })

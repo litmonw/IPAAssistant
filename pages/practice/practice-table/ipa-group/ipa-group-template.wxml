@@ -2,17 +2,10 @@
   <view class='ipa-container'>
     <text class='group-name'>{{ item.groupName }}</text>
     <view class='group-items'>
-      <block wx:for='{{ item.groupItems }}' wx:for-item='item'>
+      <block wx:for='{{ item.groupItems }}' wx:for-index='idx' wx:for-item='item'>
         <text class='group-item {{ currentIpaDetail.name == item.itemName ? "active" : "" }}' bindtap='onMusicTap' data-name='{{ item.itemName }}' data-audioUrl='{{ item.audioUrl }}'>[<text class='ipa'>{{ item.itemName }}</text>]</text>
       </block>
     </view>
   </view>
-  <view class='detail-container' wx:if='{{ item.groupId == currentItemId && isSpreadDetail }}'>
-    <view class='method-head'>
-      <text>发音方法</text>
-    </view>
-    <view class='method-content'>
-      <text>{{ currentIpaDetail.method }}</text>
-    </view>
-  </view>
+  
 </template>

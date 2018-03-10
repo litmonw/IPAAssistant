@@ -3,6 +3,11 @@ page {
   background-color: #fafafa;
 }
 
+.hide {
+  display: none;
+}
+
+/* 音标表样式 */
 .table-container {
   padding-bottom: 40rpx;
 }
@@ -40,3 +45,43 @@ page {
   height: 36rpx !important;
 } 
 /*swtich样式end */
+
+/* 展开菜单 */
+.detail-container {
+  position: fixed;
+  bottom: 0rem;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  width: 750rpx;
+  padding: 5rpx 0;
+  box-shadow: 0 0 10rpx #666; 
+}
+
+.close {
+  height: 50rpx;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.close-img {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+}
+
+.method-head {
+  padding: 20rpx 20rpx 0;
+}
+
+.method-content {
+  padding: 10rpx 20rpx 100rpx;
+}
+
+.method-head text {
+  font-size: 32rpx;
+  border-left: 8rpx #00c853 solid;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-indent: 28rpx;
+  display: block;
+}
