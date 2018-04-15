@@ -1,0 +1,27 @@
+<template name='detailSentenceTemplate'>
+  <view class='sentence-list-container'>
+    <text class='train-name'>句子</text>
+    <view class='sentences-container'>
+      <view class='sentence-container'>
+        <text class='sentence-eng'>he lives by the lake.</text>
+        <text class='sentence-locale'>它住在湖畔。</text>
+        <image class='sentence-play-img' src='/images/play_2.png'></image>
+      </view>
+      <view class='sentence-container'>
+        <text class='sentence-eng'>he lives by the lake.</text>
+        <text class='sentence-locale'>它住在湖畔。</text>
+        <image class='sentence-play-img' src='/images/play_2.png'></image>
+      </view>
+      <view class='sentence-container'>
+        <text class='sentence-eng'>he lives by the lake.</text>
+        <text class='sentence-locale'>它住在湖畔。</text>
+        <image class='sentence-play-img' src='/images/play_2.png'></image>
+      </view>
+      <view class='sentence-container'>
+        <text class='sentence-eng'>he lives by the lake.</text>
+        <text class='sentence-locale'>它住在湖畔。</text>
+        <image class='sentence-play-img' src='/images/play_2.png'></image>
+      </view>
+    </view>
+  </view>
+</template>

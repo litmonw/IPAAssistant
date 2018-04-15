@@ -1,16 +1,4 @@
 <import src='/nav-list/nav-list-template.wxml' />
 <view class='container'>
-  <view class='qoutes'>
-    <view>
-      <text class='qoutes-cn'>If you can't express your ideas succinctly.</text>
-    </view>
-    <view>
-      <text class='qoutes-eng'>如果你无法简洁的表达你的想法，那只说明你还不够了解</text>
-    </view>
-    <view class='qoutes-author'>
-      <text class=''>阿尔伯特·爱因斯坦</text>
-    </view>
-  </view>
-
   <template is='navListTemplate' data='{{ navList }}'/>
 </view>

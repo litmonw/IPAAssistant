@@ -1,5 +1,6 @@
 // pages/practice/practice-topic/topic-detail/topic-detail.js
 var ipaDetailData = require('../../../../data/ipa-detail-data.js');
+var wordData = require('../../../../data/word-data.js');
 Page({
 
   /**
@@ -23,7 +24,16 @@ Page({
         break;
       }
     }
+    // 获得单词数据
+    var words = {};
+    for (var i = 0; i < wordData.items.length; i++) {
+      if (ipa.name === wordData.items[i].ipaName) {
+        words = wordData.items[i].words;
+      }
+    }
+
     this.setData({
+      currentWords: words,
       currentIpa: ipa,
       currentPage: options.page
     })
@@ -43,10 +53,28 @@ Page({
    * @e 事件
    */
   onNextTap: function (e) {
-    var nextPage = parseInt(this.data.currentPage) + 1;
+    this.turnPage(1);
+  },
+
+  /**
+   * @e 事件
+   */
+  onPreviousTap: function (e) {
+    this.turnPage(-1);
+  },
+
+  turnPage: function (stepNum) {
+    var toPage = parseInt(this.data.currentPage) + stepNum;
     wx.redirectTo({
-      url: 'topic-detail?name=' + this.data.currentIpa.name + '&page=' + nextPage
-    })
+      url: 'topic-detail?name=' + this.data.currentIpa.name + '&page=' + toPage
+    });
+  },
+  
+
+  onRestartTap: function (e) {
+    wx.redirectTo({
+      url: 'topic-detail?name=' + this.data.currentIpa.name + '&page=1'
+    });
   },
 
   /**
@@ -83,6 +111,15 @@ Page({
     }
   },
 
+  // 单词页面
+  onPlayWordTap: function (e) {
+    console.log(1);
+    var audioUrl = e.target.dataset.audiourl;
+    wx.playBackgroundAudio({
+      dataUrl: audioUrl,
+    })
+  },
+
   // 不能使用 wx.playBackgroundAudio 必须为网络资源
   onPlaySelfTap: function (e) {
     // this.innerAudioContext = wx.createInnerAudioContext();
@@ -92,6 +129,5 @@ Page({
     // })
     // this.innerAudioContext.src = this.data.src;  // 这里可以是录音的临时路径
     // this.innerAudioContext.play();
-  }
-
+  },
 })

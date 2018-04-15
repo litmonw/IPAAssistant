@@ -1,6 +1,8 @@
 /* pages/practice/practice-topic/topic-detail/topic-detail.wxss */
 @import 'detail-try/detail-try-template.wxss';
 @import 'detail-contrast/detail-contrast-template.wxss';
+@import 'detail-word/detail-word-template.wxss';
+@import 'detail-sentence/detail-sentence-template.wxss';
 .ipa-head {
   width: 750rpx;
   height: 80rpx;

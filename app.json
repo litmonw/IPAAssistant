@@ -7,18 +7,17 @@
     "pages/practice/practice-topic/practice-topic",
     "pages/practice/practice-topic/topic-detail/topic-detail",
     "pages/practice/practice-confusion/practice-confusion",
-    "pages/test/test",
-    "pages/mine/mine",
-    "pages/mine/wrongcollection/wrongcollection",
-    "pages/mine/feedback/feedback",
-    "pages/mine/about/about"
+    "pages/me/me",
+    "pages/me/wrongcollection/wrongcollection",
+    "pages/me/feedback/feedback",
+    "pages/me/about/about"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#00c853"
+    "navigationBarBackgroundColor": "#6e8eed"
   },
   "tabBar": {
     "borderStyle": "white",
-    "selectedColor": "#00c853",
+    "selectedColor": "#6e8eed",
     "position": "bottom",
     "list": [
       {
@@ -28,16 +27,10 @@
         "selectedIconPath": "images/practice-selected.png"
       },
       {
-        "pagePath": "pages/test/test",
-        "text": "测验",
-        "iconPath": "images/test.png",
-        "selectedIconPath": "images/test-selected.png"
-      },
-      {
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath": "images/mine.png",
-        "selectedIconPath": "images/mine-selected.png"
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-selected.png"
       }
     ]
   }

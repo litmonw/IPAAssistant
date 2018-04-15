@@ -1,6 +1,8 @@
 <!--pages/practice/practice-topic/topic-detail/topic-detail.wxml-->
 <import src='detail-try/detail-try-template.wxml' />
 <import src='detail-contrast/detail-contrast-template.wxml' />
+<import src='detail-word/detail-word-template.wxml' />
+<import src='detail-sentence/detail-sentence-template.wxml' />
 <view class='container'>
   <view class='ipa-head'>
     <text class='ipa-name'>前元音[i]</text>
@@ -13,10 +15,16 @@
     <block wx:if='{{ currentPage == 2 }}'>
       <template is='detailContrastTemplate' data='{{ currentIpa,isRecording }}' />
     </block>
+    <block wx:if='{{ currentPage == 3}}'>
+      <template is='detailWordTemplate' data='{{ currentWords }}' />
+    </block>
+    <block wx:if='{{ currentPage == 4}}'>
+      <template is='detailSentenceTemplate'/>
+    </block>
   </view>
   <view class='handle-buttons'>
     <button wx:if='{{ currentPage != 1 }}' catchtap='onPreviousTap' class='previous-button'>上一节</button>
-    <button wx:if='{{ currentPage != 5 }}' catchtap='onNextTap' class='next-button'>下一节</button>
+    <button wx:if='{{ currentPage != 4 }}' catchtap='onNextTap' class='next-button'>下一节</button>
     <block wx:else>
       <button catchtap='onRestartTap' class='restart-button'>再来一次</button>
       <button catchtap='onOverTap' class='over-button'>完成</button>

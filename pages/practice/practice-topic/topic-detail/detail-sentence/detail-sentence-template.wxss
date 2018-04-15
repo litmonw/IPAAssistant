@@ -1,0 +1,47 @@
+.sentence-list-container {
+  margin-top: 60rpx;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+}
+
+.sentence-list-container .train-name {
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+.sentence-list-container .sentence-play-img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.sentence-list-container .sentences-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40rpx;
+}
+
+.sentence-list-container .sentence-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 750rpx;
+  flex-direction: column;
+  border: 2rpx solid #00c853;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  padding: 5rpx 10rpx;
+  color: #00c853;
+  position: relative;
+}
+
+.sentence-list-container .sentence-container text {
+  margin-top: 20rpx;
+}
+
+.sentence-list-container .sentence-container image {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+}

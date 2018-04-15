@@ -1,0 +1,39 @@
+.word-list-container {
+  margin-top: 60rpx;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+}
+
+.word-list-container .train-name {
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+.word-list-container .word-play-img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.word-list-container .words-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40rpx;
+}
+
+.word-list-container .word-container {
+  display: flex;
+  align-items: center;
+  border: 2rpx solid #00c853;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  padding: 5rpx 10rpx;
+  color: #00c853;
+}
+
+.word-list-container text {
+  margin-right: 20rpx;
+}

@@ -1,0 +1,15 @@
+<template name='detailWordTemplate'>
+  <view class='word-list-container'>
+    <text class='train-name'>单词</text>
+    <view class='words-container'>
+      <block wx:for='{{ currentWords }}' wx:for-item='item'>
+        <view class='word-container' catchtap='onPlayWordTap' data-AudioUrl='{{ item.audioUrl }}'>
+          <text class='word-eng'>{{ item.wordName }}</text>
+          <text class=''>[<text>{{ item.wordIpa }}</text>]</text>
+          <text class='word-locale'>{{ item.wordMean }}</text>
+          <image class='word-play-img' src='/images/play_2.png'></image>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>
