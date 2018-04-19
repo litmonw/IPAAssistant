@@ -2,8 +2,11 @@
   <view class='nav-list'>
     <block wx:for='{{ navList }}' wx:for-item='item'>
       <view class='nav-item' catchtap='onNavTap' data-NavUrl='{{ item.url }}'>
-        <text class='item-text'>{{ item.title }}</text>
-        <image class='arrow-right' src='../../images/arrow-right.png'></image>
+        <image class='item-icon' src='../../images/{{ item.cover }}'></image>
+        <view class='item-info'>
+          <text class='title'>{{ item.title }}</text>
+          <text class='subtitle'>{{ item.subTitle }}</text>
+        </view>
       </view>
     </block>
   </view>

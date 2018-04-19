@@ -2,27 +2,41 @@
   margin-top: 40rpx;
 }
 
-.nav-item {
+ .nav-item {
+  height: 200rpx;
   display: flex;
   flex: row;
+  justify-content: flex-start;
   align-items: center;
-  font-size: 24rpx;
-  justify-content: space-between;
+  background-color: #fff;
   box-sizing: border-box;
   width: 686rpx;
   margin: 20rpx auto;
-  box-shadow: 0 5rpx 20rpx #888;
   border-radius: 5rpx;
   color: #333;
-  padding: 20rpx;
+  padding: 40rpx 0 40rpx 80rpx;
   margin-bottom: 40rpx;
 }
 
-.arrow-right {
-  width: 48rpx;
-  height: 48rpx;
+.item-icon {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 80rpx;
 }
 
-.item-text {
-  vertical-align: middle;
+.item-info {
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-info .title {
+  font-size: 36rpx;
+  line-height: 60rpx;
+}
+
+.item-info .subtitle {
+  font-size: 32rpx;
+  color: #999;
 }

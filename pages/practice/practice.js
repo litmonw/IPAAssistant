@@ -1,4 +1,4 @@
-var practiceData = require('../../data/practice-data.js');
+var practiceData = require('../../data/practice-nav-data.js');
 
 Page({
 

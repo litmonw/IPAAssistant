@@ -4,6 +4,7 @@ text {
 }
 
 page {
+   background-color: #f5f5f5; 
   margin-bottom: 40rpx;
   box-sizing: border-box;
 }

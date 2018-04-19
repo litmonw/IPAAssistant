@@ -1,18 +1,1 @@
 @import '../../nav-list/nav-list-template.wxss';
-page {
-  background-color: #fafafa;
-}
-
-.qoutes {
-  box-sizing: border-box;
-  width: 686rpx;
-  margin: 20rpx auto;
-  color: #fff;
-  background-color: #6e8eed;
-  padding: 60rpx 20rpx;
-  border-radius: 5px;
-}
-
-.qoutes-author {
-  text-align: right;
-}

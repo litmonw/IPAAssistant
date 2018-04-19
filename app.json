@@ -13,11 +13,11 @@
     "pages/me/about/about"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#6e8eed"
+    "navigationBarBackgroundColor": "#29bea0"
   },
   "tabBar": {
     "borderStyle": "white",
-    "selectedColor": "#6e8eed",
+    "selectedColor": "#29bea0",
     "position": "bottom",
     "list": [
       {
